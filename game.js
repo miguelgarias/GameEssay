@@ -1,3 +1,5 @@
+function update() {
+
 var config = {
   type: Phaser.AUTO,
   width: 800,
@@ -128,4 +130,9 @@ function handleCollision(ball, enemy) {
   enemy.destroy();
   this.score++;
   this.collisionSound.play(); // Play the collision sound (if added)
+}
+
+console.log("Character position:", this.character.x, this.character.y);
+    console.log("Ball positions:", this.balls.children.entries());
+    console.log("Enemy positions:", this.enemies.children.entries());
 }
